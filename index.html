@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Landing Page - Dark Mode</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background:#0d0d0d;
+      color: rgb(196, 201, 196);
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #111;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4da6ff;
+    }
+
+    nav a {
+      margin-left: 25px;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4da6ff;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('business-bg.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      max-width: 700px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    /* SERVICES SECTION */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #4da6ff;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .service-box {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #333;
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      border-color: #4da6ff;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial {
+      background: #1a1a1a;
+      padding: 20px;
+      border-left: 4px solid #4da6ff;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    /* CONTACT SECTION */
+    .contact-box {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      background: #111;
+      padding: 25px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">MyBusiness</div>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <h1>We Help Your Business Grow</h1>
+    <p>Providing professional solutions for websites, branding, and business growth. Let us take your business to the next level.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Web Development</h3>
+        <p>Modern and responsive websites built for your business needs.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Branding & Logo Design</h3>
+        <p>Build a strong visual identity that represents your brand.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Digital Marketing</h3>
+        <p>Grow your online presence and reach more customers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial">“Amazing service! My business grew in just 3 months.” – Client A</div>
+    <div class="testimonial">“Professional and creative team. Highly recommended.” – Client B</div>
+    <div class="testimonial">“Delivered exactly what I needed. Will hire again!” – Client C</div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <p>Email: mohammedtahazakeria@gmail.com</p>
+      <p>Phone: +91 7075763542</p>
+      <a class="btn" href="mailto:yourbusiness@example.com">Send Email</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 MyBusiness. All rights reserved.
+  </footer>
+
+</body>
+</html>
